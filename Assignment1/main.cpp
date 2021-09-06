@@ -82,7 +82,7 @@ void programTwo(void)
         switch (option)
         {
         case '0': mainMenu(); break;
-        case 'a': case 'A': number = inputInteger("\t Enter an integer number (base 10): "); displayOptionTwoMenu(); break;
+        case 'a': case 'A': number = inputInteger("\t\t Enter an integer number (base 10): "); displayOptionTwoMenu(); break;
         case 'b': case 'B': convertOneBase(number); displayOptionTwoMenu();  break;
         case 'c': case 'C': convertAllBase(number); displayOptionTwoMenu();  break;
         default: cout << "\t\tERROR-1A: Invalid input. Must be '0','A','B', or 'C'"; continue;

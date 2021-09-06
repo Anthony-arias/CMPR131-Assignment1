@@ -6,6 +6,8 @@
 #include "input.h"
 #include <vector>
 
+//PreCondition: input decimal number (integer) and base(integer). The base value must be from 2 to 36
+//PostCondition: Convert from decimal to the destination base
 void baseConverter(int number, int base)
 {
     int quotient;
@@ -32,6 +34,8 @@ void baseConverter(int number, int base)
     }
     cout << " (base of " << base << ")" << endl;
 }
+//PreCondition: input decimal number (integer)
+//PostCondition: Convert from decimal to the destination base
 void convertOneBase(int number)
 {
     if (!number)
@@ -43,6 +47,8 @@ void convertOneBase(int number)
         baseConverter(number, base);
     }
 }
+//PreCondition: input decimal number (integer)
+//PostCondition: Convert from decimal to all base from 2 to 36
 void convertAllBase(int number)
 {
     if (!number)
