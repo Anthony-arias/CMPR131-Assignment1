@@ -86,7 +86,7 @@ void programTwo(void)
         switch (option)
         {
         case '0': mainMenu(); break;
-        case 'a': case 'A': number = inputInteger("\t Enter an integer number (base 10): "); displayOptionTwoMenu(); break;
+        case 'a': case 'A': number = inputInteger("\t\t Enter an integer number (base 10): "); displayOptionTwoMenu(); break;
         case 'b': case 'B': convertOneBase(number); displayOptionTwoMenu();  break;
         case 'c': case 'C': convertAllBase(number); displayOptionTwoMenu();  break;
         default: cout << "\t\tERROR-1A: Invalid input. Must be '0','A','B', or 'C'"; continue;
@@ -105,29 +105,29 @@ void programThree(void)
         switch (option)
         {
         case '0': mainMenu(); break;
-        case 'a': case 'A': /*function here*/ displayOptionThreeMenu(); break;
-        case 'b': case 'B': /*function here*/ displayOptionThreeMenu(); break;
-        case 'c': case 'C': /*function here*/ displayOptionThreeMenu(); break;
-        case 'd': case 'D': /*function here*/ displayOptionThreeMenu(); break;
-        case 'e': case 'E': /*function here*/ displayOptionThreeMenu(); break;
-        case 'f': case 'F': /*function here*/ displayOptionThreeMenu(); break;
-        case 'g': case 'G': /*function here*/ displayOptionThreeMenu(); break;
-        case 'h': case 'H': /*function here*/ displayOptionThreeMenu(); break;
-        case 'i': case 'I': /*function here*/ displayOptionThreeMenu(); break;
-        case 'j': case 'J': /*function here*/ displayOptionThreeMenu(); break;
-        case 'k': case 'K': /*function here*/ displayOptionThreeMenu(); break;
-        case 'l': case 'L': /*function here*/ displayOptionThreeMenu(); break;
-        case 'm': case 'M': /*function here*/ displayOptionThreeMenu(); break;
-        case 'n': case 'N': /*function here*/ displayOptionThreeMenu(); break;
-        case 'o': case 'O': /*function here*/ displayOptionThreeMenu(); break;
-        case 'p': case 'P': /*function here*/ displayOptionThreeMenu(); break;
-        case 'q': case 'Q': /*function here*/ displayOptionThreeMenu(); break;
-        case 'r': case 'R': /*function here*/ displayOptionThreeMenu(); break;
-        case 's': case 'S': /*function here*/ displayOptionThreeMenu(); break;
-        case 't': case 'T': /*function here*/ displayOptionThreeMenu(); break;
-        case 'u': case 'U': /*function here*/ displayOptionThreeMenu(); break;
-        case 'v': case 'V': /*function here*/ displayOptionThreeMenu(); break;
-        case 'w': case 'W': /*function here*/ displayOptionThreeMenu(); break;
+        case 'a': case 'A': section_A(); displayOptionThreeMenu(); break;
+        case 'b': case 'B': section_B(); displayOptionThreeMenu(); break;
+        case 'c': case 'C': section_C(); displayOptionThreeMenu(); break;
+        case 'd': case 'D': section_D(); displayOptionThreeMenu(); break;
+        case 'e': case 'E': section_E(); displayOptionThreeMenu(); break;
+        case 'f': case 'F': section_F(); displayOptionThreeMenu(); break;
+        case 'g': case 'G': section_G(); displayOptionThreeMenu(); break;
+        case 'h': case 'H': section_H(); displayOptionThreeMenu(); break;
+        case 'i': case 'I': section_I(); displayOptionThreeMenu(); break;
+        case 'j': case 'J': section_J(); displayOptionThreeMenu(); break;
+        case 'k': case 'K': section_K(); displayOptionThreeMenu(); break;
+        case 'l': case 'L': section_L(); displayOptionThreeMenu(); break;
+        case 'm': case 'M': section_M(); displayOptionThreeMenu(); break;
+        case 'n': case 'N': section_N(); displayOptionThreeMenu(); break;
+        case 'o': case 'O': section_O(); displayOptionThreeMenu(); break;
+        case 'p': case 'P': section_P(); displayOptionThreeMenu(); break;
+        case 'q': case 'Q': section_Q(); displayOptionThreeMenu(); break;
+        case 'r': case 'R': section_R(); displayOptionThreeMenu(); break;
+        case 's': case 'S': section_S(); displayOptionThreeMenu(); break;
+        case 't': case 'T': section_T(); displayOptionThreeMenu(); break;
+        case 'u': case 'U': section_U(); displayOptionThreeMenu(); break;
+        case 'v': case 'V': section_V(); displayOptionThreeMenu(); break;
+        case 'w': case 'W': section_W(); displayOptionThreeMenu(); break;
         default: cout << "\t\tERROR-1A: Invalid input. Must be '0','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V', or 'W'"; continue;
         }
     } while (true);
