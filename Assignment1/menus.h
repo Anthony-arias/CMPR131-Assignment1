@@ -9,7 +9,7 @@ using namespace std;
 //PostCondition: displays main menu options
 void displayMainMenu(void)
 {
-    cout << "\n\tCMPR131 - Chapter 1 Software Development by Anthony, An, Van, Vincent, Nhan (1/6/21)" << endl;
+    cout << "\n\tCMPR131 - Chapter 1 Software Development by Anthony, An, Van, Vincent, Nhan (9/7/21)" << endl;
     cout << "\t" + string(85, char(205)) << endl;
     cout << "\t\t1> ASCII Text To ASCII Numbers" << endl;
     cout << "\t\t2> Base Converter" << endl;
