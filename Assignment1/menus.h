@@ -7,7 +7,7 @@ using namespace std;
 
 void displayMainMenu(void)
 {
-    cout << "\n\tCMPR131 - Chapter 1 Software Development by (Members in team) (1/6/21)" << endl;
+    cout << "\n\tCMPR131 - Chapter 1 Software Development by (Members in team): (1/6/21)" << endl;
     cout << "\t" + string(70, char(205)) << endl;
     cout << "\t\t1> ASCII Text To ASCII Numbers" << endl;
     cout << "\t\t2> Base Converter" << endl;
@@ -19,7 +19,7 @@ void displayMainMenu(void)
 
 void displayOptionOneMenu(void)
 {
-    cout << "\n\t\t1> ASCII Text To ASCII Numbers" << endl;
+    cout << "\n\t\t1> ASCII Text To ASCII Numbers by Anthony Arias" << endl;
     cout << "\t\t" + string(70, char(205)) << endl;
     cout << "\t\t\tA> Enter a text string" << endl;
     cout << "\t\t\tB> Convert the text string to ASCII numbers" << endl;
@@ -32,7 +32,7 @@ void displayOptionOneMenu(void)
 
 void displayOptionTwoMenu(void)
 {
-    cout << "\n\t\t2> Base Converter" << endl;
+    cout << "\n\t\t2> Base Converter by Van Luu" << endl;
     cout << "\t\t" + string(70, char(205)) << endl;
     cout << "\t\t\tA> Enter an integer number (base 10)" << endl;
     cout << "\t\t\tB> Specify and converting base" << endl;
@@ -44,7 +44,7 @@ void displayOptionTwoMenu(void)
 
 void displayOptionThreeMenu(void)
 {
-    cout << "\n\t\t3> Descriptive Statistics" << endl;
+    cout << "\n\t\t3> Descriptive Statistics by Nhan Thai and An Dao" << endl;
     cout << "\t\t" + string(90, char(205)) << endl;
     cout << "\t\t\tA> Read data file, store into a sorted dynamic array and display the data set" << endl;
     cout << "\t\t\tB> Minimum                     M> Mid Range" << endl;
