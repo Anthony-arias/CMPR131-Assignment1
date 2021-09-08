@@ -167,11 +167,6 @@ void section_B()
         cout << "\n\t\tMinimum " << setw(40) << " = " << dataset[0];
     }
     cout << "\n";
-    ofstream output;
-    output.open("b.txt", ofstream::app);
-    output << "\n\t\tMinimum " << setw(40) << " = " << dataset[0];
-    output.close();
-
 }
 
 // Maximum
@@ -187,10 +182,6 @@ void section_C()
         cout << "\n\t\tMaximum " << setw(40) << " = " << dataset[dataset.size() - 1];
     }
     cout << "\n";
-    ofstream output;
-    output.open("b.txt", ofstream::app);
-    output << "\n\t\tMaximum " << setw(40) << " = " << dataset[dataset.size() - 1];
-    output.close();
 }
 
 // Range
