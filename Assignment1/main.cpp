@@ -1,6 +1,6 @@
 // main.cpp
 
-// Team: 
+// Team: Anthony, An, Van, Vincent, Nhan
 // Chapter 1: Software Development.
 // 08/28/2021
 
@@ -23,6 +23,8 @@ int main(void)
     return EXIT_SUCCESS;
 }
 
+//PreCondition: NA
+//PostCondition: redirects user to different menus based on their choice
 void mainMenu(void)
 {
     clearScreen();
@@ -43,6 +45,8 @@ void mainMenu(void)
     } while (true);
 }
 
+//PreCondition: NA
+//PostCondition: lets user choose actions found in program one
 void programOne(void)
 {
     string userStringInput = "";
@@ -57,22 +61,18 @@ void programOne(void)
         switch (option)
         {
         case '0': mainMenu(); break;
-        case 'a': case 'A': userStringInput = inputString("\n\t\t\tEnter a text line: ", true);
-                            displayOptionOneMenu(); break;
+        case 'a': case 'A': userStringInput = inputString("\n\t\t\tEnter a text line: ", true); displayOptionOneMenu(); break;
         case 'b': case 'B': asciiString = asciiConverter(userStringInput); 
-                            cout << "\n\t\t\tConverted to ASCII numbers:" << endl;
-                            cout << "\t\t\t" + asciiString << endl; displayOptionOneMenu(); break;
-        case 'c': case 'C': saveToFile(asciiString);
-                            cout << "\n\t\t\tFile, test.bin, has been written and saved." << endl;
-                            displayOptionOneMenu(); break;
-        case 'd': case 'D': cout << "\n\t\t\tReading file, test.bin...";
-                            cout << "\n\t\t\t" + readFromFile() << endl;
-                            displayOptionOneMenu(); break;
+                            displayAscii(asciiString); displayOptionOneMenu(); break;
+        case 'c': case 'C': displaySaveToFile(asciiString); displayOptionOneMenu(); break;
+        case 'd': case 'D': displayReadFromFile(); displayOptionOneMenu(); break;
         default: cout << "\t\tERROR-1A: Invalid input. Must be '0','A','B','C', or 'D'"; continue;
         }
     } while (true);
 }
 
+//PreCondition: NA
+//PostCondition: lets user choose actions found in program Two
 void programTwo(void)
 {
     int number = NULL;
@@ -94,6 +94,8 @@ void programTwo(void)
     } while (true);
 }
 
+//PreCondition: NA
+//PostCondition: lets user choose actions found in program Three
 void programThree(void)
 {
     displayOptionThreeMenu();

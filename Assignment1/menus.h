@@ -5,18 +5,22 @@
 
 using namespace std;
 
+//PreCondition: NA
+//PostCondition: displays main menu options
 void displayMainMenu(void)
 {
-    cout << "\n\tCMPR131 - Chapter 1 Software Development by (Members in team) (1/6/21)" << endl;
-    cout << "\t" + string(70, char(205)) << endl;
+    cout << "\n\tCMPR131 - Chapter 1 Software Development by Anthony, An, Van, Vincent, Nhan (1/6/21)" << endl;
+    cout << "\t" + string(85, char(205)) << endl;
     cout << "\t\t1> ASCII Text To ASCII Numbers" << endl;
     cout << "\t\t2> Base Converter" << endl;
     cout << "\t\t3> Descriptive Statistics" << endl;
-    cout << "\t" + string(70, char(196)) << endl;
+    cout << "\t" + string(85, char(196)) << endl;
     cout << "\t\t0> exit" << endl;
-    cout << "\t" + string(70, char(205)) << endl;
+    cout << "\t" + string(85, char(205)) << endl;
 }
 
+//PreCondition: NA
+//PostCondition: displays option one menu options
 void displayOptionOneMenu(void)
 {
     cout << "\n\t\t1> ASCII Text To ASCII Numbers" << endl;
@@ -30,6 +34,8 @@ void displayOptionOneMenu(void)
     cout << "\t\t" + string(70, char(205));
 }
 
+//PreCondition: NA
+//PostCondition: displays option two menu options
 void displayOptionTwoMenu(void)
 {
     cout << "\n\t\t2> Base Converter" << endl;
@@ -42,6 +48,8 @@ void displayOptionTwoMenu(void)
     cout << "\t\t" + string(70, char(205));
 }
 
+//PreCondition: NA
+//PostCondition: displays option three menu options
 void displayOptionThreeMenu(void)
 {
     cout << "\n\t\t3> Descriptive Statistics" << endl;
